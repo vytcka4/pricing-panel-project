@@ -1,0 +1,134 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html{
+  box-sizing: border-box;
+  font-family:'Open Sans', sans-serif;
+}
+
+body{
+  background-color:rgb(58, 124, 248);
+  display:flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.panel-pricing-table{
+  display:flex;
+  flex-direction:column;
+  background-color:white;
+  width:100%;
+  text-align: center;
+  max-width: 960px;
+  padding: 15px 25px;
+  text-transform: uppercase;
+}
+.pricing-plan{
+  border-bottom: 1px solid rgb(199, 199, 199);
+}
+.pricing-img{
+  margin-bottom: 25px;
+  max-width: 100%;
+}
+.pricing-header{
+  font-size: 17px;
+  color: rgb(199, 199, 199);
+  margin-bottom: 10px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgb(199, 199, 199);
+  font-weight: 600;
+  letter-spacing:1px;
+}
+
+.pricing-features{
+  margin-bottom:10px;
+  color:rgb(58, 124, 248);
+  font-size: 10px;
+}
+.pricing-features-item{
+  font-weight: 600;
+  letter-spacing:1px;
+  margin-bottom: 10px;
+  padding-bottom: 15px;
+  padding-top: 10px;
+  border-bottom: 1px solid rgb(199, 199, 199);
+}
+.pricing-price{
+  display:block;
+  color:rgb(58, 124, 248);
+  font-size:30px;
+  font-weight: 600;
+  letter-spacing:1px;
+  margin-bottom: 15px;
+}
+.pricing-button{
+  text-decoration: none;
+  border: 2px solid rgb(58, 124, 248);
+  display: inline-block;
+  padding: 15px 35px;
+  border-radius:10px;
+  margin: 25px 0;
+  transition: all 200ms ease-in-out;
+}
+
+.pricing-button:hover{
+  background-color:rgb(199, 199, 199);
+}
+
+@media(min-width:900px){
+  .panel-pricing-table{
+    display:flex;
+    flex-direction: row;
+    border-radius:10px;
+    align-items:center;
+    justify-content:center;
+  }
+  .pricing-plan{
+    border-bottom: none;
+  }
+
+}
+
+
+
